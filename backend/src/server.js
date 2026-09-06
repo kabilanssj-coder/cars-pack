@@ -50,6 +50,7 @@ const limiter = rateLimit({
 app.use("/api", limiter);
 
 app.use("/api/health", healthRoutes);
+console.log("[Auth] Auth routes loaded");
 app.use("/api/auth", authRoutes);
 app.use("/api/cars", carRoutes);
 app.use("/api/enquiries", enquiryRoutes);
